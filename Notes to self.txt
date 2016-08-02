@@ -1,0 +1,29 @@
+
+
+// CSS //
+
+Styles to include in CSS:
+
+Elements
+    * H1
+    * H2
+    * H3
+    * P
+
+Classes
+    * newsfeed
+    * newsletter
+    * people-card
+    * peoplpic
+    * service-card
+    * solution-info (redundant with service-card?)
+    * Some form CSS? 
+    
+// TO DO //
+
+  CANCELLED   O Jumbotron / Header
+    X CSS file
+    X newsletter script
+    O Newsfeed script (if enough time)
+    X finish contact form
+    X include effects on the pictures (rounded squares, maybe?)

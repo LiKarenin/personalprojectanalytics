@@ -6,11 +6,10 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
-        <!-- This is where the fonts should go
-        <link href='https://fonts.googleapis.com/css?family=Montaga|Raleway:600&effect=emboss' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-        -->
-
+        <!-- Google fonts for this web site -->
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,55 +24,149 @@
     
     <body>
         
+        <!-- Jumbotron in header
         <div class="jumbotron">
             <div class="container-fluid">
-                <!-- Here goes the name of the company and/or background pic -->
+                <div class="row">
+                    <div class="col-sm-12">
+                         <img src="img/header.jpg" alt="Header"/>  
+                        <h2>Tharkûn Analytics</h2>
+                        <p>We Show the Way for Financial Analytics.</p>
+                    </div>
+                </div>
             </div>
         </div>
+        -->
    
         <!--Navigation Bar-->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="col-md-6 col-md-offset-2 container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=#myNavbar style="border-color:white;  background-color: #c0c0c0">Menu</button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=#myNavbar >Menu</button>
                 </div>
                 
                 <div class="collapse navbar-collapse" id="myNavbar">
         
                     <ul class="nav nav-pills nav-justified">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">Who We Are</a></li>
-                        <li><a href="services.html">What We Do</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
+                        <li id="TA_logo"><a href="index.html"><img src="img/TA_logo.png" alt="Home"/></a></li>
+                        <li role="presentation" ><a href="about-us.html">Who We Are</a></li>
+                        <li role="presentation" ><a href="services.html">What We Do</a></li>
+                        <li role="presentation" ><a href="contact.html">Contact us</a></li>
                     </ul>
                 </div><!--navbar collapse-->
             </div><!--container closing tag-->
         </nav>
-        
+       
         <!-- Content -->
-        <div class="container">
+        <div class="container-fluid">
             
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control"
-                id="exampleInputEmail1" placeholder="email">
+         <!-- First container contains a short description of the company's address -->
+            <div class="container-fluid contact-us">
+                <div class="container">
+                <!-- Main title of the introdduction + tagline -->
+                <div class="row">
+                    <div class="col-md-offset-2">
+                        <h1>Contact us</h1>   
+                        <h2>Available to our clients at any time.</h2>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control"
-                id="exampleInputPassword1 placeholder="Password">
+                
+                <!-- Description text in two responsive columns  -->
+                <div class="row">
+                    <div class="col-sm-6 col-md-offset-2 col-md-4">
+                        <h3>Telephone</h3>
+                        <p>+1 (888) YOU ROCK</p>
+                        <p>+1 (718) 765 1234</p>
+                        <br><br><br><br>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <h3>Corporate Offices</h3>
+                        <p>1748 Jones Street</p>
+                        <p>Brooklyn, NY 11111</p>
+                        <br><br><br><br>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <input type="file" id="exampleInputFile">
-                    <p class="help-block">Example block-level help text 
-                    here.</p>
                 </div>
+    
+            </div>  
+
+            <!-- Second container contains a the contact form -->
+            <div class="container">
+    
+                
+                <!-- Title of the Second part of the page -->
+                <div class="row">
+                    <div class="col-md-offset-2">
+                        <h2>Contact us online</h2>   
+                    </div>
+                </div>        
+                <form id="contact-form">
                     
-            </form>
-        
+                    <div class="row">
+                        
+                        <!-- The first 3 inputs of the form will be on the left of the page on a laptop -->
+                        <div class="col-sm-6 col-md-offset-2 col-md-4">
+                            
+                            <div class="form-group">
+                                <label for="nameinput">Full Name</label>
+                                <input type="text" class="form-control"  placeholder="Type your name here..." name="Full Name"/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="emailinput">Email address</label>
+                                <input type="email" class="form-control" id="emailinput" placeholder="E-mail address">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="objectinput">How Can We Help?</label>
+                                <select  class="form-control" id="objectinput">
+                                    <option selected value="FAQ">- - -</option>
+                                    <option value="LoginTrouble">Are you having login trouble?</option>
+                                    <option value="Analytics">Our Solutions</option>
+                                    <option value="Investing">How to join</option>
+                                    <option value="Our people"Make an appointment with us</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- The text to enter in a textaera will appear on the right of the page on a laptop -->
+                        <div class="col-sm-6 col-md-4">
+                            
+                            <div class="form-group">
+                                <label for="contentinput">Please describe your request:</label>
+                                <textarea class="form-control" name="comment" id="contentinput" rows="8" placeholder="Enter text here..."></textarea>
+                            </div>                   
+                            
+                        </div>
+     
+                    </div>
+                
+                    <div class="row">
+                        <button type="submit" class="btn btn-default center-block">Submit</button>
+                    </div>
+    
+                </form>
+            
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container footer"><br><br><br>
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr>      <!-- Separatino line across the page -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-4 col-xs-12"><p class="footer">Tharkûn Analytics</p></div>
+                <div class="col-sm-4 col-xs-12"><p class="footer">info@tharkun.jrr</p></div>
+                <div class="col-sm-4 col-xs-12"><p class="footer">(718) 765 - 1234</p></div>
+            </div><br><br>
         </div>
         
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>    
     </body>
 </html>

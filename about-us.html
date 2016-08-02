@@ -6,10 +6,9 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
-        <!-- This is where the fonts should go
-        <link href='https://fonts.googleapis.com/css?family=Montaga|Raleway:600&effect=emboss' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-        -->
+        <!-- Google fonts for this web site -->
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         
@@ -23,43 +22,51 @@
         <title>Tharkûn Analytics</title>
     </head>
     
-    <body>
+    <body >
         
+        <!-- Jumbotron in header
         <div class="jumbotron">
             <div class="container-fluid">
-                <!-- Here goes the name of the company and/or background pic -->
+                <div class="row">
+                    <div class="col-sm-12">
+                         <img src="img/header.jpg" alt="Header"/>  
+                        <h2>Tharkûn Analytics</h2>
+                        <p>We Show the Way for Financial Analytics.</p>
+                    </div>
+                </div>
             </div>
         </div>
+        -->
    
         <!--Navigation Bar-->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="col-md-6 col-md-offset-2 container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=#myNavbar style="border-color:white;  background-color: #c0c0c0">Menu</button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=#myNavbar >Menu</button>
                 </div>
                 
                 <div class="collapse navbar-collapse" id="myNavbar">
         
                     <ul class="nav nav-pills nav-justified">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">Who We Are</a></li>
-                        <li><a href="services.html">What We Do</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
+                        <li id="TA_logo"><a href="index.html"><img src="img/TA_logo.png" alt="Home"/></a></li>
+                        <li role="presentation" ><a href="about-us.html">Who We Are</a></li>
+                        <li role="presentation" ><a href="services.html">What We Do</a></li>
+                        <li role="presentation" ><a href="contact.html">Contact us</a></li>
                     </ul>
                 </div><!--navbar collapse-->
             </div><!--container closing tag-->
         </nav>
         
         <!-- Content -->
-        
+
         <!-- First container contains a short descirption of the company's vision -->
-        <div class="container">
-            
+        <div class="container-fluid about-us">
+            <div class="container">
             <!-- Main title of the introdduction + tagline -->
             <div class="row">
                 <div class="col-md-offset-2">
                     <h1>Why We Are Here</h1>   
-                    <p>Reinventing the future of finance from your home.</p>
+                    <h2>Reinventing the future of finance from your home.</h2>
                 </div>
             </div>
             
@@ -67,43 +74,79 @@
             <div class="row">
                 <div class="col-sm-6 col-md-offset-2 col-md-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices, nisl a pellentesque malesuada, metus elit efficitur lorem, sed vulputate enim felis eu massa. Pellentesque ac tortor in ipsum sodales finibus. Proin metus nibh, sagittis et nibh ornare, aliquet egestas dui. Ut laoreet quis augue vel bibendum. Curabitur mattis, dolor non gravida luctus, elit arcu eleifend risus, vel viverra lectus mi iaculis velit. Etiam et quam mi. Cras ornare ante at sagittis dignissim. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices, nisl a pellentesque malesuada, metus elit efficitur lorem, sed vulputate enim felis eu massa. Pellentesque ac tortor in ipsum sodales finibus. Proin metus nibh, sagittis et nibh ornare, aliquet egestas dui. </p>
                 </div>
-                <div class="col-sm-6 col-md-offset-2 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
                 </div>
+            </div>
             </div>
 
         </div>   
         
         <!-- Second container contains a gallery of the executives of the company -->
         <div class="container">
+
             
-            <div class="people-card col-sm-6 col-md-offset-2 col-md-4" id="jack-onasis">
-                <img src="img/partner1.jpg" class="peoplepic"  class="img-responsive" class="center-block" width="280" />
-                <h3>Jack Onasis</h3>
-                <p>Partner, Member of the Board, CEO</p>
+            <!-- Title of the Second part of the page -->
+            <div class="row">
+                <div class="col-md-offset-2">
+                    <h2>Our Executive Commitee</h2>   
+                </div>
+            </div>    
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4" id="jack-onasis-placeholder-div">
+                    <div class="people-card" id="jack-onasis">
+                        <img src="img/partner1.jpg" class="img-responsive img-rounded peoplepic"  />
+                        <h3>Jack Onasis</h3>
+                        <p>Partner,<br> Member of the Board, CEO<br></p>
+                    </div>                    
+                </div>
+
+                            
+                <div class="col-xs-12 col-sm-6 col-md-4" id="sarah-cohen-placeholder-div">
+                    <div class="people-card" id="sarah-cohen">
+                        <img src="img/partner2.jpg" class="img-responsive img-rounded peoplepic"   />
+                        <h3>Sarah Cohen</h3>
+                        <p>Partner,<br> Member of the Board, CFO<br></p>
+                    </div>
+                </div>
+    
+                <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4" id="jess-smith-placeholder-div">
+                    <div class="people-card" id="jess-smith">
+                        <img src="img/partner3.jpg"  class="img-responsive img-rounded peoplepic"  />
+                        <h3>Jess Smith</h3>
+                        <p>Partner,<br> Member of the Board, COO<br></p>
+                    </div>
+                </div>
+                            
+                <div class="col-xs-12 col-sm-6 col-md-4" id="jess-smith-placeholder-div">
+                    <div class="people-card" id="dipesh-dupont">
+                        <img src="img/partner4.jpg" class="img-responsive img-rounded peoplepic"  />
+                        <h3>Dipesh Dupont</h3>
+                        <p>Partner,<br> Member of the Board, CPO<br></p>
+                    </div>
+                </div>
             </div>
-                        
-            <div class="people-card col-sm-6 col-md-offset-2 col-md-4" id="sarah-cohen">
-                <img src="img/partner1.jpg" class="peoplepic"  class="img-responsive" class="center-block" width="280" />
-                <h3>Sarah Cohen</h3>
-                <p>Partner, Member of the Board, CFO</p>
-            </div>
-                        
-            <div class="people-card col-sm-6 col-md-offset-2 col-md-4" id="dipesh-dupont">
-                <img src="img/partner1.jpg" class="peoplepic"  class="img-responsive" class="center-block" width="280" />
-                <h3>Dipesh Dupont</h3>
-                <p>Partner, Member of the Board, CPO</p>
-            </div>
-                        
-            <div class="people-card col-sm-6 col-md-offset-2 col-md-4" id="theresa-howardston">
-                <img src="img/partner1.jpg" class="peoplepic"  class="img-responsive" class="center-block" width="280" />
-                <h3>Theresa Howardson</h3>
-                <p>Partner, Member of the Board, COO</p>
-            </div>
-                
+            
         </div>
-        
+
+        <!-- Footer -->
+        <div class="container footer"><br><br><br>
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr>      <!-- Separatino line across the page -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-4 col-xs-12"><p class="footer">Tharkûn Analytics</p></div>
+                <div class="col-sm-4 col-xs-12"><p class="footer">info@tharkun.jrr</p></div>
+                <div class="col-sm-4 col-xs-12"><p class="footer">(718) 765 - 1234</p></div>
+            </div><br><br>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>    
     </body>
 </html>
